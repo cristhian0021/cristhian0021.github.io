@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Navideño Interactivo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>🎄 Mapa Navideño Interactivo 🎄</h1>
+        <p>Haz clic en un país para descubrir su tradición navideña</p>
+    </header>
+
+    <main>
+        <div class="map-container">
+            <div id="map"></div>
+            <img src="images/santa.png" id="santa" alt="Papá Noel">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 Tradiciones Navideñas | Diseñado con amor navideño 🎅</p>
+    </footer>
+
+    <div id="description-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+</body>
+</html>
